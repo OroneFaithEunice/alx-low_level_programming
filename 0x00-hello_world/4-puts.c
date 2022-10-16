@@ -1,9 +1,9 @@
 #include <stdio.h>
 
 /**
- * main- Serves as the entry point for the program
+ * main - Serves as the entry point for the program
  *
- * Return: Returns zero by default if there are no errors otherwise returns non zero valve
+ * Return: Returns zero by default if sucessful.
  */
 
 int main(void)
