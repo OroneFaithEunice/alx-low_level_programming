@@ -5,6 +5,7 @@
  *
  * Return: Returns zero by default if there are no errors otherwise returns non zero valve
  */
+
 int main(void)
 {
 	puts("\"Programming is like building a multilingual puzzle");
