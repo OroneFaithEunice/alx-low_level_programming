@@ -1,25 +1,39 @@
 #include "main.h"
 
 /**
- * leet - Encodes a string to 1337
- *  @str: The string to be encoded
- *  Return: A pointer to the encoded string
+ * cap_string - Capitalizes all words of a string.
+ * @str: The string to be capitalized
+ * Return: A pointer to the changed string
  */
 
-char *leet(char *str)
+char *cap_string(char *str)
 {
-	int indx1 = 0, indx2;
-	char leet[8] = {'O', 'L', '?', 'E', 'A', '?', '?', 'T'};
+	int index = 0;
 
-	while (str[indx1])
+	while (str[index])
 	{
-		for (indx2 = 0; indx2 <= 7; indx2++)
-		{
-			if (str[indx1] == leet[indx2] ||
-					str[indx1] - 32 == leet[indx2])
-				str[indx1] = indx2 + '0';
-		}
-		indx1++;
+		while (!(str[index] >= 'a' && str[index] <= 'z'))
+			index++;
+
+		if (str[index - 1] == ' ' ||
+				str[index - 1] == '\t' ||
+				str[index - 1] == '\n' ||
+				str[index - 1] == ',' ||
+				str[index - 1] == ';' ||
+				str[index - 1] == '.' ||
+				str[index - 1] == '!' ||
+				str[index - 1] == '?' ||
+				str[index - 1] == '"' ||
+				str[index - 1] == '(' ||
+				str[index - 1] == ')' ||
+				str[index - 1] == '{' ||
+				str[index - 1] == '}' ||
+				index == 0)
+			str[index] -= 32;
+
+		index++;
 	}
+
 	return (str);
+
 }
