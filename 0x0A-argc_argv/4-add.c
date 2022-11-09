@@ -40,7 +40,7 @@ int main(int argc, char *argv[])
 				}
 			}
 
-			sum += strlen(argv[i]);
+			sum += atoi(argv[i]);
 
 		}
 
