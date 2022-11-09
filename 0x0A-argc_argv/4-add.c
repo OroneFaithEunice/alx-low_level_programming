@@ -2,6 +2,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <ctype.h>
+#include <string.h>
 
 /**
  * main - Program that takes in all integer arguments and returns the sum
@@ -39,7 +40,7 @@ int main(int argc, char *argv[])
 				}
 			}
 
-			sum += atoi(argv[i]);
+			sum += strlen(argv[i]);
 
 		}
 
