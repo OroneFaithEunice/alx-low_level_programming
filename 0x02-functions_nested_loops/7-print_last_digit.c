@@ -6,15 +6,15 @@
  * Return: vlave of the last digit
  */
 
-int print_last_digit(int n)
+int print_last_digit(int nId)
 {
-	int ld = n % 10;
+	int pld;
+	pld = (nld % 10);
 
-
-	if (ld < 0)
-		ld += -1;
-
-	_putchar(ld + '0');
-
-	return (0);
+	if (pld < 0)
+	{
+		pld = (-1 * pld);
+	}
+	_putchar(pld + '0');
+	return (pld);
 }
